@@ -3,13 +3,12 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: "Patrick Hand", cursive;
-    color: #f0f0f0;
 }
 
 /* start of nav*/
 .topnav {
-    background: rgb(2,0,36, 0.4);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(124,65,2,1) 35%, rgba(34,37,0,1) 100%);
+    background: rgb(115,94,0);
+    background: linear-gradient(153deg, rgba(115,94,0,1) 0%, rgba(93,49,3,1) 19%, rgba(28,18,0,1) 100%);
     backdrop-filter: blur(10px);
     overflow: hidden;
     position: fixed;
@@ -25,6 +24,7 @@ body {
     position: absolute;
     left: 5rem;
     font-size: 40px;
+    color: #f0f0f0;
 }
 
 .topnav a {
@@ -93,3 +93,30 @@ body {
     cursor: pointer;
 }
 /* end of nav */
+
+/* start of main */
+main {
+    margin-top: 5rem;
+    padding: 2rem;
+    width: auto;
+    height: 100dvh;
+    border: 1px solid black;
+}
+
+.landing-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.landing-content {
+    border: 1px solid black;
+    width: 45rem;
+    height: 30rem;
+}
+
+.landing-image {
+    border: 1px solid black;
+    height: 30rem;
+    width: 40rem;
+}
