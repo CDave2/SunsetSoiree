@@ -1,0 +1,13 @@
+@media screen and (max-width: 1200px){
+    .topnav ul {
+        display: none;
+    }
+
+    .topnav button {
+        display: block;
+        margin-right: 3.7rem;
+        background-color: transparent;
+        border: none;
+    }
+}
+

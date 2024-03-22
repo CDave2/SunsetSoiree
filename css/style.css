@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Patrick Hand", cursive;
+    color: #f0f0f0;
+}
+
+/* start of nav*/
+.topnav {
+    background: rgb(2,0,36, 0.4);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(124,65,2,1) 35%, rgba(34,37,0,1) 100%);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.topnav h3 {
+    position: absolute;
+    left: 5rem;
+    font-size: 40px;
+}
+
+.topnav a {
+    color: #f0f0f0;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-right: 5rem;
+    font-size: 20px;
+}
+
+.topnav a:last-child {
+    border: 1px solid #f0f0f0;
+    padding: 10px 3rem;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav button {
+    display: none;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgb(17, 17, 17, 0.8);
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    backdrop-filter: blur(5px);
+}
+
+#sidebarBtn {
+    cursor: pointer;
+}
+
+.sidebar a {
+    color: #f1f1f1;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+
+    box-icon {
+        margin-right: 2rem;
+        margin-top: 20px;
+    }
+}
+
+/* .sidebar a:hover {
+    color: #f1f1f1;
+} */
+
+.sidebar #closeBtn {
+    margin-top: -2.5rem;
+    margin-left: 8rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+/* end of nav */
