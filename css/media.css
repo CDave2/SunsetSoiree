@@ -9,5 +9,14 @@
         background-color: transparent;
         border: none;
     }
+
+    .landing-image {
+        display: none;
+    }
+
+    .landing-content {
+        text-align: center;
+        margin-top: -2rem;
+    }
 }
 

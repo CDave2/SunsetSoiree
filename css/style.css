@@ -99,8 +99,8 @@ main {
     margin-top: 5rem;
     padding: 2rem;
     width: auto;
-    height: 100dvh;
-    border: 1px solid black;
+    height: 79dvh;
+    /* border: 1px solid black; */
 }
 
 .landing-container {
@@ -110,13 +110,42 @@ main {
 }
 
 .landing-content {
-    border: 1px solid black;
-    width: 45rem;
-    height: 30rem;
+    /* border: 1px solid black; */
+    width: 40rem;
+    height: auto;
+
+    h1 {
+        font-size: 4.5rem;
+        font-weight: 500;
+    }
+
+    p {
+        font-size: 2rem;
+        font-weight: 300;
+        margin-top: -2rem;
+    }
+
+    button {
+        margin-top: 1rem;
+        padding: 1rem 2rem;
+        font-family: "Patrick Hand", cursive;
+        background-color: transparent;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
 }
 
 .landing-image {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 30rem;
-    width: 40rem;
+    width: auto;
+    margin-top: 2rem;
+    overflow: hidden;
+    display: flex;
+
+    img {
+        object-fit:contain;
+        width: 100%;
+        height: 100%;
+    }
 }
