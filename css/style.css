@@ -42,8 +42,10 @@ body {
 }
 
 .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: rgb(240, 240, 240, 0.3);
+    color: rgb(255, 123, 0);
+    border-radius: 10px;
+    transition: 0.1s ease;
 }
 
 .topnav button {
@@ -57,7 +59,7 @@ body {
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: rgb(17, 17, 17, 0.8);
+    background-color: rgba(62, 25, 1, 0.8);
     overflow-x: hidden;
     transition: 0.3s;
     padding-top: 60px;
@@ -99,7 +101,7 @@ main {
     margin-top: 5rem;
     padding: 2rem;
     width: auto;
-    height: 79dvh;
+    height: 79.4dvh;
     /* border: 1px solid black; */
 }
 
@@ -147,5 +149,42 @@ main {
         object-fit:contain;
         width: 100%;
         height: 100%;
+    }
+}
+
+.featured-container {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+    padding-top: 6rem;
+}
+
+.featured-image {
+    height: 30rem;
+    width: auto;
+
+    img {
+        object-fit:contain;
+        height: 100%;
+        box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.featured-content {
+    padding-top: 0.3rem;
+
+    h1 {
+        font-size: 3.4rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+        margin-top: -1rem;
+        width: 25rem;
+    }
+
+    button {
+        margin-top: 2.3rem;
     }
 }

@@ -3,6 +3,10 @@
         display: none;
     }
 
+    .topnav h3 {
+        left: 2rem;
+    }
+
     .topnav button {
         display: block;
         margin-right: 3.7rem;
