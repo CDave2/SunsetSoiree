@@ -1,4 +1,4 @@
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1300px){
     .topnav ul {
         display: none;
     }
@@ -15,12 +15,31 @@
     }
 
     .landing-image {
-        display: none;
+        position: absolute;
+        width: 100%;
+        height: 87.6%;
+        z-index: -1;
+        top: 0;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
 
     .landing-content {
         text-align: center;
         margin-top: -2rem;
+
+        p {
+            z-index: 2;
+        }
+
+        button {
+            border: 1px solid white;
+            color: whitesmoke;
+        }
     }
 }
 

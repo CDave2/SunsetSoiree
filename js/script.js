@@ -7,7 +7,7 @@ document.getElementById("closeBtn").addEventListener("click", function() {
 });
 
 window.addEventListener("resize", function() {
-    if (window.innerWidth >= 1199) {
+    if (window.innerWidth >= 1299) {
         document.getElementById("mySidebar").style.width = "0";
     }
 });
