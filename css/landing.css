@@ -43,7 +43,7 @@ body {
 
 .topnav a:hover {
     background-color: rgb(240, 240, 240, 0.3);
-    color: rgb(255, 123, 0);
+    font-weight: bolder;
     border-radius: 10px;
     transition: 0.1s ease;
 }
@@ -99,7 +99,6 @@ body {
 /* start of main */
 main {
     margin-top: 5rem;
-    padding: 2rem;
     width: auto;
     height: 79.4dvh;
     /* border: 1px solid black; */
@@ -109,6 +108,8 @@ main {
     display: flex;
     justify-content: center;
     gap: 30px;
+    padding-top: 3rem;
+    padding-bottom: 7rem;
 }
 
 .landing-content {
@@ -155,9 +156,13 @@ main {
 .featured-container {
     /* border: 1px solid black; */
     display: flex;
-    justify-content: center;
-    gap: 10vw;
-    padding-top: 6rem;
+    justify-content: space-evenly;
+    height: auto;
+    padding: 5rem;
+}
+
+.featured-container:nth-child(even) {
+    background-color: rgb(211, 211, 211, 0.3);
 }
 
 .featured-image {
@@ -172,19 +177,23 @@ main {
 }
 
 .featured-content {
-    padding-top: 0.3rem;
-
     h1 {
         font-size: 3.4rem;
+        margin-top: 0.5rem;
     }
 
     p {
-        font-size: 1.4rem;
+        font-size: 150%;
         margin-top: -1rem;
-        width: 25rem;
+        width: 30vw;
+        border: 1px solid black;
     }
 
     button {
-        margin-top: 2.3rem;
+        margin-top: 1.3rem;
+        background-color: transparent;
+        padding: 10px 15px;
+        font-family: "Patrick Hand", cursive;
+        font-size: 1.2rem;
     }
 }

@@ -24,3 +24,26 @@
     }
 }
 
+@media screen and (max-width: 900px) {
+    .featured-container {
+        display: block;
+        text-align: center;
+    }
+
+    .featured-content {
+        margin: 0 auto;
+
+        p {
+            width: auto;
+        }
+    }
+
+    .featured-image {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .featured-image {
+        order: -1;
+    }
+}
