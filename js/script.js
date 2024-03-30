@@ -12,3 +12,8 @@ window.addEventListener("resize", function() {
     }
 });
 
+document.getElementById("myImage").addEventListener("click", function() {
+    var imgSrc = this.src;
+    var win = window.open();
+    win.document.write('<img src="' + imgSrc + '" alt="Image preview">');
+});
