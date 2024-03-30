@@ -1,0 +1,137 @@
+html {
+    background-image: url(/img/bgsvg.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Quicksand", sans-serif;
+}
+
+.feed-placeholder {
+    width: 630px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: blue; */
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.feed-actions {
+    margin-left: auto;
+    margin-right: auto;
+    float: right;
+    margin-right: 45px;
+    margin-top: 250px;
+    width: 60px;
+}
+
+.feed-card {
+    background: rgba(255, 255, 232, 0.8);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+    width: 500px;
+    height: 700px;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    float: left;
+}
+
+.img-container {
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+}
+
+.btn-placeholder {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+p.counter {
+    margin-top: 10px;
+}
+
+.love-post,
+.favorite,
+.comment {
+    background-color: red;
+    background: rgba(255, 255, 232, 0.4);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    transition: transform 0.6s ease-in-out;
+    transition: 0.6s ease-in-out;
+}
+
+.love-post:hover {
+    transform: rotate(360deg);
+}
+
+.love-post:hover,
+.favorite:hover,
+.comment:hover {
+    background-color: #FFF78A;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.img-container:hover .overlay {
+    opacity: 1;
+}
+
+.description-feed {
+    margin: 20px 35px 20px 35px;
+}
+
+.user-placeholder  {
+    overflow: hidden;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.user-placeholder img {
+    display: inline-block;
+    width: 50px;
+    border-radius: 50%;
+}
+
+p.profile-name {
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+h1.title {
+    margin-bottom: 0px;
+}
+
+p.description {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
