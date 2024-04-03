@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/feed-style-main.css">
+    <link rel="stylesheet" href="style/feed-style-media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
@@ -14,7 +15,7 @@
 
 <body>
     <section class="sidenav">
-        <h1>Title here</h1>
+        <h1>Dave Dave</h1>
         <ul>
             <a href="/feed/feed.html">Home</a>
             <a href="/landing.html">Explore</a>
@@ -22,6 +23,18 @@
             <a href="#">Create</a>
             <a href="#">Profile</a>
         </ul>
+    </section>
+    <section class="sidenav-shortcut">
+        <ul>
+            <a href="/feed/feed.html">H</a>
+            <a href="/landing.html">E</a>
+            <a href="#">N</a>
+            <a href="#">C</a>
+            <a href="#">P</a>
+        </ul>
+    </section>
+    <section class="list-container">
+        
     </section>
     <section class="feeds">
         <div class="feed-placeholder">
@@ -42,7 +55,7 @@
             </div>
             <div class="feed-card">
                 <div class="img-container">
-                    <img src="img/boracay-beach.jpg" alt="">
+                    <img id="myImage" src="img/boracay-beach.jpg" alt="" onclick="openImage()">
                     <div class="overlay">Click to display full image.</div>
                 </div>
                 <div class="description-feed">

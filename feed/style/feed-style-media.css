@@ -1,0 +1,36 @@
+@media screen and (max-width: 1200px) {
+    .sidenav {
+        display: none;
+    }
+
+    .sidenav-shortcut {
+        display: block;
+        position: fixed;
+        border-right: 1px solid rgb(180, 180, 180);
+        height: 100%;
+        width: 5rem;
+        top: 0;
+        left: 0;
+    
+        h1 {
+            margin-top: 2rem;
+            margin-left: 3rem;
+        }
+    
+        ul {
+            width: 1rem;
+            margin: 4rem 2rem auto;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2.4rem;
+            
+            a {
+                text-decoration: none;
+                color: black;
+                font-size: 1.2rem;
+            }
+    
+        }
+    }
+}

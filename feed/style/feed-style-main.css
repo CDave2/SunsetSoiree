@@ -3,15 +3,17 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     font-family: "Quicksand", sans-serif;
+    overflow-x: hidden
 }
 
 .feed-placeholder {
-    width: 630px;
+    width: 750px;
     height: 720px;
-    margin-left: 39%;
+    margin: 2rem auto;
+    /* border: 1px solid black; */
     /* background-color: blue; */
-    margin-top: 2em;
     margin-bottom: 2em;
+    scale:inherit;
 }
 
 .feed-actions {
@@ -19,7 +21,7 @@ html {
     margin-right: auto;
     float: right;
     margin-right: 45px;
-    margin-top: 250px;
+    margin-top: 9rem;
     width: 60px;
 }
 
@@ -31,7 +33,7 @@ html {
     width: 500px;
     height: auto;
     border-radius: 15px;
-    margin-left: auto;
+    margin-left: 8rem;
     margin-right: auto;
     overflow: hidden;
     float: left;
@@ -162,8 +164,14 @@ p.description {
             color: black;
             font-size: 1.2rem;
         }
+
     }
 }
+
+.sidenav-shortcut {
+    display: none;
+}
+
 
 
 
