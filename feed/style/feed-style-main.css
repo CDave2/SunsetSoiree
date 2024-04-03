@@ -9,7 +9,7 @@ html {
 .feed-placeholder {
     width: 750px;
     height: 720px;
-    margin: 2rem auto;
+    margin: 4rem auto;
     /* border: 1px solid black; */
     /* background-color: blue; */
     margin-bottom: 2em;
@@ -21,7 +21,7 @@ html {
     margin-right: auto;
     float: right;
     margin-right: 45px;
-    margin-top: 9rem;
+    margin-top: 20rem;
     width: 60px;
 }
 
@@ -31,7 +31,7 @@ html {
     backdrop-filter: blur(20px);
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
     width: 500px;
-    height: auto;
+    height: 735px;
     border-radius: 15px;
     margin-left: 8rem;
     margin-right: auto;
@@ -87,7 +87,7 @@ p.counter {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
     color: #fff;
     display: flex;
     justify-content: center;
@@ -142,7 +142,7 @@ p.description {
     position: fixed;
     border-right: 1px solid rgb(180, 180, 180);
     height: 100%;
-    width: 15rem;
+    width: 20rem;
     top: 0;
     left: 0;
 
@@ -152,17 +152,28 @@ p.description {
     }
 
     ul {
-        width: 5rem;
-        margin: 4rem 3rem auto;
+        width: 19rem;
+        margin: 4rem 1rem auto;
         padding: 0;
         display: flex;
         flex-wrap: wrap;
-        gap: 2.4rem;
+        gap: 1.2rem;
+        /* border: 1px solid black; */
         
         a {
             text-decoration: none;
             color: black;
             font-size: 1.2rem;
+            /* border: 1px solid black; */
+            display: flex;
+            gap: 1.2rem;
+            width: 100%;
+            padding: 10px 20px;
+        }
+
+        a:hover {
+            background-color: rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
         }
 
     }
@@ -170,6 +181,54 @@ p.description {
 
 .sidenav-shortcut {
     display: none;
+}
+
+.list-container {
+    position: fixed;
+    right: 0;
+    height: 100%;
+    width: 24rem;
+    top: 0;
+    /* border: 1px solid black; */
+    overflow: scroll;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+
+    ul {
+
+        li {
+            list-style: none;
+            margin-top: 1rem;
+            padding: 10px 20px;
+        }
+
+        li:hover {
+            background-color: rgba(0, 0, 0, 0.05);
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        p {
+            margin-left: 1.2rem;
+        }
+    }
+}
+
+.list-container::-webkit-scrollbar {
+    width: 8px; 
+}
+
+.list-container::-webkit-scrollbar-thumb {
+    background-color: transparent; 
+}
+
+.list-container:hover {
+    scrollbar-color: auto;
+}
+
+.list-container:hover::-webkit-scrollbar-thumb {
+    background-color: auto;
 }
 
 

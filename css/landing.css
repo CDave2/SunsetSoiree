@@ -78,20 +78,19 @@ html {
 
 .sidebar a {
     color: #f1f1f1;
-    padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    display: block;
-
-    box-icon {
-        margin-right: 2rem;
-        margin-top: 20px;
-    }
+    display: flex;
+    /* border:1px solid black; */
+    gap: 1.5rem;
+    margin-top: 20px;
+    padding: 10px 20px;
 }
 
-/* .sidebar a:hover {
-    color: #f1f1f1;
-} */
+.sidebar a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
 
 .sidebar #closeBtn {
     margin-top: -2.5rem;
