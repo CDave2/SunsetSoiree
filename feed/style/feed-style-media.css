@@ -18,17 +18,25 @@
         }
     
         ul {
-            width: 1rem;
-            margin: 4rem 2rem auto;
+            width: 100%;
+            margin: 4rem 0 auto;
             padding: 0;
             display: flex;
             flex-wrap: wrap;
-            gap: 2.4rem;
+            gap: 1.2rem;
             
             a {
                 text-decoration: none;
                 color: black;
                 font-size: 1.2rem;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                padding: 10px 20px;
+            }
+
+            a:hover {
+                background-color: rgba(0, 0, 0, 0.05);
             }
     
         }
