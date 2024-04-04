@@ -1,0 +1,12 @@
+@media screen and (max-width: 990px) {
+    .create-container {
+        flex-direction: column;
+    }
+
+    .add-info-container {
+        width: 100%;
+        input {
+            width: 100%;
+        }
+    }
+}

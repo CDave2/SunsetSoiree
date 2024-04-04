@@ -96,13 +96,33 @@ html {
 }
 
 .back {
-    position: absolute;
+    position: fixed;
     background-color: transparent;
-    left: 2rem;
-    padding: 5px 10px;
+    top: 0;
+    left: 1rem;
+    border: none;
+    z-index: 100;
+    /* border: 1px solid black; */
+    border-bottom-right-radius: 15px;
+    height: 5rem;
+    width: 6.8rem;
 
     a {
         text-decoration: none;
         color: black;
+        display: flex;
+        align-items: center;
+        /* border: 1px solid black; */
+        width: 5rem;
+        padding: 5px 10px;
+        gap: 0.6rem;
+
+        box-icon {
+            margin-top: -3px;
+        }
+    }
+
+    a:hover {
+        
     }
 }
