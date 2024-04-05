@@ -8,6 +8,15 @@ html {
     margin: 0;
 }
 
+.feedtitle {
+    position: sticky;
+    margin-left: 23rem;
+    top: 1rem;
+    width: 10rem;
+    border: 1px solid black;   
+    padding-bottom: -2rem; 
+}
+
 .feed-placeholder {
     width: 750px;
     height: 720px;
@@ -38,6 +47,24 @@ html {
     margin-right: auto;
     overflow: hidden;
     float: left;
+}
+
+.name-container  {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 13rem;
+    /* border: 1px solid black; */
+    gap: 1rem;
+
+    img {
+        height: 3.5rem;
+    }
+
+    span {
+        color:gray;
+    }
+
 }
 
 .img-container {

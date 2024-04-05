@@ -20,6 +20,7 @@
         height: 48rem;
         z-index: -1;
         top: 0;
+        user-select: none;
 
         img {
             width: 100%;
@@ -48,6 +49,7 @@
 
     #featured {
         color: black;
+        user-select: none;
     }
 }
 
@@ -67,7 +69,7 @@
 
     .featured-image {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
     }
 
     .featured-title {
@@ -85,9 +87,15 @@
 
     .winner-image {
         margin-top: 0;
+        border: 1px solid red;
+        margin-left: auto;
+        margin-right: auto;
+        width: 20rem;
     }
 
     .winner-title {
         margin-top: -9rem;
+        /* border: 1px solid black; */
+        width: 96%;
     }
 }
