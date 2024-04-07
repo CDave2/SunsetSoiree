@@ -50,10 +50,6 @@ html {
     padding: 1rem;
     justify-content: left;
 
-    .description {
-        height: 8rem;
-    }
-
     input {
         margin-top: 0.2rem;
         width: 80%;
@@ -79,4 +75,9 @@ html {
     button:hover {
         background-color: rgb(0, 0, 0, 0.05);
     }
+}
+
+.description {
+    height: 8rem; 
+    width: 80%;  
 }

@@ -71,7 +71,7 @@ html {
     /* border:1px solid black; */
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-evenly;
+    justify-content: center ;
 
     .collection-image {
         width: auto;
@@ -120,9 +120,5 @@ html {
         box-icon {
             margin-top: -3px;
         }
-    }
-
-    a:hover {
-        
     }
 }
