@@ -114,10 +114,8 @@
             /* border: 1px solid red; */
             
             a {
-                text-decoration: none;
-                color: black;
-                font-size: 1.2rem;
                 width: 100%;
+                /* border: 1px solid black; */
                 display: flex;
                 justify-content: center;
                 padding: 10px 20px;

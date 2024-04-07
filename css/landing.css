@@ -106,7 +106,7 @@ html {
 main {
     margin-top: 5rem;
     width:100%;
-    border: 1px solid black
+    /* border: 1px solid black */
 }
 
 .landing-container {
@@ -182,7 +182,7 @@ main {
     img {
         object-fit:contain;
         height: 100%;
-        box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2);
+        /* box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2); */
     }
 }
 
@@ -215,7 +215,7 @@ main {
     justify-content: space-evenly;
     align-items: center;
     padding: 1rem;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .winner-image {

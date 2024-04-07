@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <title>Feed</title>
+    <script src="/feed/func.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </head>
 
@@ -18,29 +19,31 @@
         <h1>Sunset Soirée</h1>
         <ul>
             <a href="/feed/feed.html"><box-icon type='solid' name='home-smile'></box-icon>Home</a>
-            <a href="/index.html"><box-icon name='map-alt' type='solid' ></box-icon>News</a>
-            <a href="#"><box-icon name='notification' ></box-icon>Notifications</a>
-            <a href="/feed/create.html"><box-icon name='book-add' ></box-icon>Create</a>
-            <a href="/feed/profile.html"><box-icon name='user-pin' type='solid' ></box-icon>Profile</a> 
+            <a href="/index.html"><box-icon name='map-alt' type='solid'></box-icon>News</a>
+            <a href="#"><box-icon name='notification'></box-icon>Notifications</a>
+            <a href="/feed/create.html"><box-icon name='book-add'></box-icon>Create</a>
+            <a href="/feed/profile.html"><box-icon name='user-pin' type='solid'></box-icon>Profile</a>
         </ul>
         <div class="name-container">
             <img src="/feed/img/profile-pictures/vue-color-avatar.png" alt="">
             <p>Christian Dave Banluta <span>@christian_dave</span></p>
         </div>
-        
+
     </section>
     <section class="sidenav-shortcut">
         <ul>
             <a href="/feed/feed.html" title="Home"><box-icon type='solid' name='home-smile'></box-icon></a>
-            <a href="/index.html" title="News"><box-icon name='map-alt' type='solid' ></box-icon></a>
-            <a href="#" title="Notifications"><box-icon name='notification' ></box-icon></a>
-            <a href="/feed/create.html" title="Create"><box-icon name='book-add' ></box-icon></a>
-            <a href="/feed/profile.html" title="Profile"><box-icon name='user-pin' type='solid' ></box-icon></a>
+            <a href="/index.html" title="News"><box-icon name='map-alt' type='solid'></box-icon></a>
+            <a href="#" title="Notifications"><box-icon name='notification'></box-icon></a>
+            <a href="/feed/create.html" title="Create"><box-icon name='book-add'></box-icon></a>
+            <a href="/feed/profile.html" title="Profile"><box-icon name='user-pin' type='solid'></box-icon></a>
         </ul>
     </section>
     <section class="list-container">
         <ul>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, sit asperiores voluptatibus id natus tempora magnam, sequi soluta ducimus dolores maxime inventore, est error! Asperiores molestiae reiciendis sunt soluta laudantium.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, sit asperiores voluptatibus id natus
+                tempora magnam, sequi soluta ducimus dolores maxime inventore, est error! Asperiores molestiae
+                reiciendis sunt soluta laudantium.</p>
             <p><b>Friends</b></p>
             <li><box-icon name='user-circle' size="md"></box-icon>Christian Dave</li>
             <li><box-icon name='user-circle' size="md"></box-icon>Christ Dav</li>
@@ -60,6 +63,10 @@
     <!-- <section class="list-container-shortcut">
         <button>click me</button>
     </section> -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
     <section class="feeds">
         <!-- <h1 class="feedtitle">Feed</h1> -->
         <div class="feed-placeholder">
@@ -74,7 +81,8 @@
                         <p class="profile-name">@christian_dave</p>
                     </div>
                     <h1 class="title">Lorem ipsum dolor sit.</h1>
-                    <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem aperiam explicabo accusamus minus odio asperiores quis expedita totam sit laboriosam.</p>
+                    <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem aperiam
+                        explicabo accusamus minus odio asperiores quis expedita totam sit laboriosam.</p>
                 </div>
             </div>
             <div class="feed-actions">
@@ -105,7 +113,8 @@
                         <p class="profile-name">@christian_dave</p>
                     </div>
                     <h1 class="title">Lorem ipsum dolor sit.</h1>
-                    <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem aperiam explicabo accusamus minus odio asperiores quis expedita totam sit laboriosam.</p>
+                    <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem aperiam
+                        explicabo accusamus minus odio asperiores quis expedita totam sit laboriosam.</p>
                 </div>
             </div>
             <div class="feed-actions">
@@ -136,7 +145,8 @@
                         <p class="profile-name">@christian_dave</p>
                     </div>
                     <h1 class="title">Lorem ipsum dolor sit.</h1>
-                    <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem aperiam explicabo accusamus minus odio asperiores quis expedita totam sit laboriosam.</p>
+                    <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem aperiam
+                        explicabo accusamus minus odio asperiores quis expedita totam sit laboriosam.</p>
                 </div>
             </div>
             <div class="feed-actions">
@@ -167,7 +177,8 @@
                         <p class="profile-name">@christian_dave</p>
                     </div>
                     <h1 class="title">Lorem ipsum dolor sit.</h1>
-                    <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem aperiam explicabo accusamus minus odio asperiores quis expedita totam sit laboriosam.</p>
+                    <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem aperiam
+                        explicabo accusamus minus odio asperiores quis expedita totam sit laboriosam.</p>
                 </div>
             </div>
             <div class="feed-actions">
@@ -188,5 +199,4 @@
         </div>
     </section>
 </body>
-
 </html>

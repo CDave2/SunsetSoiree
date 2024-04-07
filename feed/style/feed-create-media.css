@@ -6,11 +6,14 @@
 
     .topnav {
         h1 {
-            margin: 0 auto;
+            margin: 1rem auto;
+            text-align: center;
+            width: 100%;
         }
 
         a {
             position: fixed;
+            left: 2rem;
         }
     }
 

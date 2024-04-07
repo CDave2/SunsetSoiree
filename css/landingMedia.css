@@ -87,15 +87,30 @@
 
     .winner-image {
         margin-top: 0;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         margin-left: auto;
         margin-right: auto;
-        width: 20rem;
+        width: 50%;
+
+        img {
+            width: 100%;
+        }
     }
 
     .winner-title {
         margin-top: -9rem;
         /* border: 1px solid black; */
         width: 96%;
+    }
+
+    .featured-image {
+        /* border: 1px solid red; */
+        background-color: transparent;
+        height: 20rem;
+
+        img {
+            width: 100%;
+            bottom: 0;
+        }
     }
 }
