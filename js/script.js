@@ -17,3 +17,22 @@ document.getElementById("myImage").addEventListener("click", function() {
     var win = window.open();
     win.document.write('<img src="' + imgSrc + '" alt="Image preview">');
 });
+
+var totalSeconds = 10 * 24 * 60 * 60; 
+var timer = document.getElementById('timer');
+
+var countdown = setInterval(function() {
+    totalSeconds--;
+
+    var days = Math.floor(totalSeconds / (24 * 60 * 60));
+    var hours = Math.floor((totalSeconds % (24 * 60 * 60)) / (60 * 60));
+    var minutes = Math.floor((totalSeconds % (60 * 60)) / 60);
+    var seconds = Math.floor(totalSeconds % 60);
+
+    timer.textContent = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+    if (totalSeconds <= 0) {
+        clearInterval(countdown);
+        timer.textContent = "Time's up!";
+    }
+}, 1000);

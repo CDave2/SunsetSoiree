@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <title>Feed</title>
-    <script src="/feed/func.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </head>
 
@@ -19,7 +18,7 @@
         <h1>Sunset Soirée</h1>
         <ul>
             <a href="/feed/feed.html"><box-icon type='solid' name='home-smile'></box-icon>Home</a>
-            <a href="/index.html"><box-icon name='map-alt' type='solid'></box-icon>News</a>
+            <a href="/index.html"><box-icon name='map-alt' type='solid'></box-icon>Event <span class="alert">!</span></a>
             <a href="#"><box-icon name='notification'></box-icon>Notifications</a>
             <a href="/feed/create.html"><box-icon name='book-add'></box-icon>Create</a>
             <a href="/feed/profile.html"><box-icon name='user-pin' type='solid'></box-icon>Profile</a>
@@ -63,17 +62,12 @@
     <!-- <section class="list-container-shortcut">
         <button>click me</button>
     </section> -->
-    <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img01">
-    </div>
     <section class="feeds">
         <!-- <h1 class="feedtitle">Feed</h1> -->
         <div class="feed-placeholder">
             <div class="feed-card">
                 <div class="img-container">
-                    <img id="myImage" src="/feed/img/Sunset/2.jpg" alt="" onclick="openImage()">
-                    <div class="overlay"></div>
+                    <img id="myImage" src="/feed/img/Sunset/2.jpg" alt="" title="Click to view">
                 </div>
                 <div class="description-feed">
                     <div class="user-placeholder">
@@ -104,8 +98,7 @@
         <div class="feed-placeholder">
             <div class="feed-card">
                 <div class="img-container">
-                    <img id="myImage" src="/feed/img/Sunset/1.jpg" alt="" onclick="openImage()">
-                    <div class="overlay"></div>
+                    <img id="myImage" src="/feed/img/Sunset/1.jpg" alt="">
                 </div>
                 <div class="description-feed">
                     <div class="user-placeholder">
@@ -136,8 +129,7 @@
         <div class="feed-placeholder">
             <div class="feed-card">
                 <div class="img-container">
-                    <img id="myImage" src="/feed/img/Sunset/3.jpg" alt="" onclick="openImage()">
-                    <div class="overlay"></div>
+                    <img id="myImage" src="/feed/img/Sunset/3.jpg" alt="">
                 </div>
                 <div class="description-feed">
                     <div class="user-placeholder">
@@ -168,8 +160,7 @@
         <div class="feed-placeholder">
             <div class="feed-card">
                 <div class="img-container">
-                    <img id="myImage" src="/feed/img/Sunset/4.jpg" alt="" onclick="openImage()">
-                    <div class="overlay"></div>
+                    <img id="myImage" src="/feed/img/Sunset/4.jpg" alt="">
                 </div>
                 <div class="description-feed">
                     <div class="user-placeholder">
@@ -198,5 +189,10 @@
             </div>
         </div>
     </section>
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+    <script src="/feed/func.js"></script>
 </body>
 </html>
