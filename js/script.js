@@ -1,3 +1,34 @@
+window.onload = function() {
+    // Check if the splash screen has been shown
+    if (!sessionStorage.getItem('splashScreenShown')) {
+        // Display the splash screen
+        var splashScreen = document.getElementById('splash-screen');
+        splashScreen.style.display = 'flex';
+
+        // Ensure the image is loaded before displaying the splash screen
+        var img = splashScreen.querySelector('img');
+        if (img.complete) {
+            showSplashScreen(splashScreen);
+        } else {
+            img.onload = function() {
+                showSplashScreen(splashScreen);
+            };
+        }
+    } else {
+        // If the splash screen has been shown, hide it immediately
+        document.getElementById('splash-screen').style.display = 'none';
+    }
+};
+
+function showSplashScreen(splashScreen) {
+    setTimeout(function() {
+        splashScreen.style.display = 'none';
+    }, 3000);
+
+    // Set the flag in sessionStorage
+    sessionStorage.setItem('splashScreenShown', 'true');
+}
+
 document.getElementById("sidebarBtn").addEventListener("click", function() {
     document.getElementById("mySidebar").style.width = "250px";
 });
