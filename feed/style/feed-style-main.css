@@ -261,9 +261,9 @@ p.description {
 }
 
 .flex {
-    margin: 1.5rem auto;
+    margin: 2rem auto;
     width: 80%;
-    height: 95%;
+    height: 90%;
     /* border: 1px solid black; */
     display: flex;
     align-items: center;
@@ -308,6 +308,7 @@ p.description {
     backdrop-filter: blur(1px);
 }
 
+
 .modal-content {
     width: auto;   
     height: 80%;
@@ -316,7 +317,7 @@ p.description {
 
 .close {
     position: absolute;
-    top: 15px;
+    top: 7px;
     right: 35px;
     color: #f1f1f1;
     font-size: 40px;
@@ -326,7 +327,7 @@ p.description {
 
 .close:hover,
 .close:focus {
-    color: #bbb;
+    color: rgb(253, 129, 129);
     text-decoration: none;
     cursor: pointer;
 }
