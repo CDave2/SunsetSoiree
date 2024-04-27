@@ -56,6 +56,7 @@
             text-align: center;
             backdrop-filter: blur(5px);
             margin-top: 3rem;
+            font-size: 4rem;
         }
         
         p {
@@ -96,11 +97,20 @@
         p {
             width: auto;
         }
+
+        h1 {
+            /* border: 1px solid black; */
+            width: auto;
+            font-size: 2rem;
+        }
     }
 
     .featured-image {
         display: flex;
         justify-content: center;
+        width: 100%;
+        background-color: black !important;
+        min-width: 0;
     }
 
     .featured-title {
@@ -136,7 +146,7 @@
 
     .featured-image {
         /* border: 1px solid red; */
-        background-color: transparent;
+        background-color: black;
         height: 30rem;
 
         img {

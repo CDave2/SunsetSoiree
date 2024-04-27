@@ -43,11 +43,11 @@ window.addEventListener("resize", function() {
     }
 });
 
-document.getElementById("myImage").addEventListener("click", function() {
-    var imgSrc = this.src;
-    var win = window.open();
-    win.document.write('<img src="' + imgSrc + '" alt="Image preview">');
-});
+// document.getElementById("myImage").addEventListener("click", function() {
+//     var imgSrc = this.src;
+//     var win = window.open();
+//     win.document.write('<img src="' + imgSrc + '" alt="Image preview">');
+// });
 
 var totalSeconds = 10 * 24 * 60 * 60; 
 var timer = document.getElementById('timer');
