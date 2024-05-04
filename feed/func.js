@@ -24,4 +24,13 @@ window.onload = function() {
         modal.style.display = "none";
     }
 
+    document.getElementById('menu-button').addEventListener('click', function() {
+        var menu = document.getElementById('menu');
+        if (menu.classList.contains('menu-visible')) {
+            menu.classList.remove('menu-visible');
+        } else {
+            menu.classList.add('menu-visible');
+        }
+    });
+
 }
