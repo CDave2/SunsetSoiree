@@ -21,7 +21,7 @@ html {
     border-radius: 15px;
     border: 1px solid gainsboro;
     display: flex;
-    width: 800px;
+    width: 120%;
     margin-bottom: 10px;
 }
 
@@ -40,6 +40,10 @@ h3.title-notif {
     margin-bottom: 2px;
     font-size: 17px;
     font-weight: 500;
+}
+
+h1.notif-title {
+    margin-top: 2rem;
 }
 
 h3.title-notif b {

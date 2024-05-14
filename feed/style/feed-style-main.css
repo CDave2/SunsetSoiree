@@ -96,6 +96,17 @@ a {
     display: none;
 }
 
+#menu-button {
+        background-color: #FFF78A;
+        border: none;
+        border-radius: 10px;
+        padding: 5px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        margin-right: 1rem;
+}
+
 #menu.menu-visible {
     display: flex;
     position: absolute;
