@@ -13,23 +13,23 @@
 
 .profile-name {
     margin-top: 25px;
+    display: flex;
+    vertical-align: middle;
+}
+
+.profile-name span {
+    margin-left: 15px;
 }
 
 .profile-name img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    display: inline-block;
-}
-
-.profile-name span {
-    display: inline-block;
 }
 
 .profile-name h1.user-name {
     margin-bottom: 0px;
     font-size: 17px;
-    margin-top: -10px;
 }
 
 .profile-name p.date {
@@ -37,3 +37,43 @@
     font-size: 12px;
 }
 
+.reactions {
+    display: flex;
+    vertical-align: middle;
+    margin-top: 25px;
+}
+
+.reactions .reaction-placeholder:first-child{
+    display: flex;
+    vertical-align: middle;
+    margin-left: 0;
+}
+
+.reactions .reaction-placeholder{
+    display: flex;
+    vertical-align: middle;
+    margin-left: 35px;
+}
+
+.reactions p.counter {
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.profile-name span p.date {
+    font-size: 15px;
+    border-bottom: none;
+}
+
+
+.profile-name span input {
+    outline: none;
+    padding: 10px;
+    color: rgb(50, 50, 50);
+    width: 300px;
+    border-bottom: 1px solid rgb(161, 161, 161);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    font-family: "Quicksand", sans-serif;
+}
