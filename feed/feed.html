@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <title>Feed</title>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="/feed/style/feed-notification-style.css">
+    <link rel="stylesheet" href="/feed/style/post-overview.css">
 </head>
 
 <body>
@@ -18,8 +20,9 @@
         <h1>Sunset Soirée</h1>
         <ul>
             <a href="/feed/feed.html"><box-icon type='solid' name='home-smile'></box-icon>Home</a>
-            <a href="/index.html"><box-icon name='map-alt' type='solid'></box-icon>Event <span class="alert">!</span></a>
-            <a href="#"><box-icon name='notification'></box-icon>Notifications</a>
+            <a href="/index.html"><box-icon name='map-alt' type='solid'></box-icon>Event <span
+                    class="alert">!</span></a>
+            <a href="/feed/notifications.html"><box-icon name='notification'></box-icon>Notifications</a>
             <a href="/feed/create.html"><box-icon name='book-add'></box-icon>Create</a>
             <a href="/feed/profile.html"><box-icon name='user-pin' type='solid'></box-icon>Profile</a>
         </ul>
@@ -38,30 +41,67 @@
         <ul>
             <a href="/feed/feed.html" title="Home"><box-icon type='solid' name='home-smile'></box-icon></a>
             <a href="/index.html" title="News"><box-icon name='map-alt' type='solid'></box-icon></a>
-            <a href="#" title="Notifications"><box-icon name='notification'></box-icon></a>
+            <a href="/feed/notifications.html" title="Notifications"><box-icon name='notification'></box-icon></a>
             <a href="/feed/create.html" title="Create"><box-icon name='book-add'></box-icon></a>
             <a href="/feed/profile.html" title="Profile"><box-icon name='user-pin' type='solid'></box-icon></a>
         </ul>
     </section>
     <section class="list-container">
         <ul>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, sit asperiores voluptatibus id natus
-                tempora magnam, sequi soluta ducimus dolores maxime inventore, est error! Asperiores molestiae
-                reiciendis sunt soluta laudantium.</p>
+            <div class="notification-box">
+                <span class="profile-array">
+                    <img src="img/profile-pictures/vue-color-avatar.png" alt="">
+                    <img src="img/profile-pictures/randomA.png" alt="">
+                    <img src="img/profile-pictures/randomB.png" alt="">
+                    <img src="img/profile-pictures/randomC.png" alt="">
+                    <p class="time-sent"><i>Just Now</i></p>
+                </span>
+                <p>topi, liyah, and others liked your photo.</p>
+                <span class="btn-cont">
+                    <button class="dismiss">Dismiss</button>
+                    <button class="view-post">View Post</button>
+                </span>
+            </div>
             <p><b>Friends</b></p>
-            <li><box-icon name='user-circle' size="md"></box-icon>John Doe</li>
-            <li><box-icon name='user-circle' size="md"></box-icon>Jane Smith</li>
-            <li><box-icon name='user-circle' size="md"></box-icon>Robert Johnson</li>
-            <li><box-icon name='user-circle' size="md"></box-icon>Emily Davis</li>
-            <li><box-icon name='user-circle' size="md"></box-icon>Michael Miller</li>
-            <li><box-icon name='user-circle' size="md"></box-icon>Sarah Wilson</li>
-            <li><box-icon name='user-circle' size="md"></box-icon>David Moore</li>
-            <li><box-icon name='user-circle' size="md"></box-icon>Jennifer Taylor</li>
-            <li><box-icon name='user-circle' size="md"></box-icon>James Anderson</li>
-            <li><box-icon name='user-circle' size="md"></box-icon>Patricia Thomas</li>
-            <li><box-icon name='user-circle' size="md"></box-icon>William Jackson</li>
-            <li><box-icon name='user-circle' size="md"></box-icon>Linda White</li>
-            <li><box-icon name='user-circle' size="md"></box-icon>Richard Harris</li>
+            <a href="/feed/profile.html">
+                <li><box-icon name='user-circle' size="md"></box-icon>John Doe</li>
+            </a>
+            <a href="/feed/profile.html">
+                <li><box-icon name='user-circle' size="md"></box-icon>Jane Smith</li>
+            </a>
+            <a href="/feed/profile.html">
+                <li><box-icon name='user-circle' size="md"></box-icon>Robert Johnson</li>
+            </a>
+            <a href="/feed/profile.html">
+                <li><box-icon name='user-circle' size="md"></box-icon>Emily Davis</li>
+            </a>
+            <a href="/feed/profile.html">
+                <li><box-icon name='user-circle' size="md"></box-icon>Michael Miller</li>
+            </a>
+            <a href="/feed/profile.html">
+                <li><box-icon name='user-circle' size="md"></box-icon>Sarah Wilson</li>
+            </a>
+            <a href="/feed/profile.html">
+                <li><box-icon name='user-circle' size="md"></box-icon>David Moore</li>
+            </a>
+            <a href="/feed/profile.html">
+                <li><box-icon name='user-circle' size="md"></box-icon>Jennifer Taylor</li>
+            </a>
+            <a href="/feed/profile.html">
+                <li><box-icon name='user-circle' size="md"></box-icon>James Anderson</li>
+            </a>
+            <a href="/feed/profile.html">
+                <li><box-icon name='user-circle' size="md"></box-icon>Patricia Thomas</li>
+            </a>
+            <a href="/feed/profile.html">
+                <li><box-icon name='user-circle' size="md"></box-icon>William Jackson</li>
+            </a>
+            <a href="/feed/profile.html">
+                <li><box-icon name='user-circle' size="md"></box-icon>Linda White</li>
+            </a>
+            <a href="/feed/profile.html">
+                <li><box-icon name='user-circle' size="md"></box-icon>Richard Harris</li>
+            </a>
         </ul>
     </section>
     <!-- <section class="list-container-shortcut">
@@ -201,10 +241,20 @@
                 <img class="modal-content" id="img01">
             </div>
             <div class="flex-info">
-                
+                <div class="profile-name">
+                    <img src="/feed/img/profile-pictures/randomB.png" alt="">
+                    <span>
+                        <h1 class="user-name">ChristoffABC</h1>
+                        <p class="date">August 15, 2021</p>
+                    </span>
+                </div>
+                <h1 class="title">Lorem ipsum dolor sit.</h1>
+                <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem aperiam
+                    explicabo accusamus minus odio asperiores quis expedita totam sit laboriosam.</p>
             </div>
         </div>
     </div>
     <script src="/feed/func.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,76 @@
+html {
+    font-family: "Quicksand", sans-serif;
+}
+
+.notification-box {
+    background-color: rgb(253, 253, 253);
+    border-radius: 10px;
+    display: inline-block;
+    border: 1px solid gainsboro;
+    padding: 15px 10px 20px 10px;
+    width: 88%;
+    justify-content: center;
+    opacity: 0.6;
+    transition: ease-in-out 0.2s;
+}
+
+.notification-box:hover {
+    opacity: 1;
+}
+
+.notification-box span {
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.notification-box span.profile-array {
+    display: inline-block;
+    width: 88%;
+}
+
+.notification-box span.profile-array p.time-sent{
+    float: right;
+    color: grey;
+    font-size: 12px;
+}
+
+.notification-box span.btn-cont button {
+    background-color: #fdfacc;
+    border: none;
+    border-radius: 15px;
+    padding: 8px 15px 8px 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 1rem;
+    font-family: "Quicksand", sans-serif;
+    color: rgb(85, 85, 85);
+    transition: ease-in-out 0.2s;
+}
+
+.notification-box span.btn-cont button:hover {
+    background-color: #FFF78A;
+}
+
+.notification-box span.btn-cont button:last-child {
+    margin-left: -15px;
+}
+
+.notification-box img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.notification-box img {
+    margin-left: -15px;
+}
+
+.notification-box img:first-child {
+    margin-left: 0;
+}
+
+.notification-box p {
+    font-size: 14px;
+    margin-top: 3px;
+}

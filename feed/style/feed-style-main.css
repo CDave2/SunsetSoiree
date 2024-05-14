@@ -8,6 +8,11 @@ html {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .feedtitle {
     position: sticky;
     margin-left: 23rem;

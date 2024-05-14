@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/feed-style-main.css">
+    <link rel="stylesheet" href="style/feed-style-media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>Feed</title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="/feed/style/notification-main.css">
+</head>
+
+<body>
+    <section class="sidenav">
+        <h1>Sunset Soirée</h1>
+        <ul>
+            <a href="/feed/feed.html"><box-icon type='solid' name='home-smile'></box-icon>Home</a>
+            <a href="/index.html"><box-icon name='map-alt' type='solid'></box-icon>Event <span
+                    class="alert">!</span></a>
+            <a href="/feed/notifications.html"><box-icon name='notification'></box-icon>Notifications</a>
+            <a href="/feed/create.html"><box-icon name='book-add'></box-icon>Create</a>
+            <a href="/feed/profile.html"><box-icon name='user-pin' type='solid'></box-icon>Profile</a>
+        </ul>
+        <div class="name-container">
+            <img src="/feed/img/profile-pictures/vue-color-avatar.png" alt="">
+            <p>Christian Dave Banluta <span>@christian_dave</span></p>
+            <button id="menu-button"><box-icon name='menu-alt-right'></box-icon></button>
+            <div id="menu" class="menu-hidden">
+                <a href="#">Settings</a>
+                <a href="#">About</a>
+                <a href="#">Logout</a>
+            </div>
+        </div>
+    </section>
+    <section class="sidenav-shortcut">
+        <ul>
+            <a href="/feed/feed.html" title="Home"><box-icon type='solid' name='home-smile'></box-icon></a>
+            <a href="/index.html" title="News"><box-icon name='map-alt' type='solid'></box-icon></a>
+            <a href="/feed/notifications.html" title="Notifications"><box-icon name='notification'></box-icon></a>
+            <a href="/feed/create.html" title="Create"><box-icon name='book-add'></box-icon></a>
+            <a href="/feed/profile.html" title="Profile"><box-icon name='user-pin' type='solid'></box-icon></a>
+        </ul>
+    </section>
+    <section class="notification-cont">
+        <div class="main-cont-notif">
+            <h1 class="notif-title">Notifications</h1>
+            <div class="notif-container">
+                <img src="/feed/img/profile-pictures/randomB.png" alt="">
+                <div class="text-cont">
+                    <h3 class="title-notif"><b>Christofer liked your profile picture.</b></h3>
+                    <p class="time-frame">5 hours ago</p>
+                </div>
+            </div>
+            <div class="notif-container">
+                <img src="/feed/img/profile-pictures/randomA.png" alt="">
+                <div class="text-cont">
+                    <h3 class="title-notif">Christian commented <b>"Wow! Cool!"</b> on your photo timeline.</h3>
+                    <p class="time-frame">1 hour ago</p>
+                </div>
+            </div>
+            <div class="notif-container">
+                <img src="/feed/img/profile-pictures/randomC.png" alt="">
+                <div class="text-cont">
+                    <h3 class="title-notif">Luna posted a photo on their timeline. <b>View now.</b></h3>
+                    <p class="time-frame">few minutes ago</p>
+                </div>
+            </div>
+            <div class="notif-container">
+                <img src="/feed/img/profile-pictures/randomB.png" alt="">
+                <div class="text-cont">
+                    <h3 class="title-notif">Christofer is live. <b>Watch now.</b></h3>
+                    <p class="time-frame">few minutes ago</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

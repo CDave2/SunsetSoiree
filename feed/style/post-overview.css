@@ -1,0 +1,39 @@
+.flex-info h1 {
+    font-size: 19px;
+}
+
+.flex-info p {
+    font-size: 15px;
+}
+
+.flex-info {
+    width: 60%;
+    padding: 0px 25px 0px 25px;
+}
+
+.profile-name {
+    margin-top: 25px;
+}
+
+.profile-name img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.profile-name span {
+    display: inline-block;
+}
+
+.profile-name h1.user-name {
+    margin-bottom: 0px;
+    font-size: 17px;
+    margin-top: -10px;
+}
+
+.profile-name p.date {
+    margin-top: 0;
+    font-size: 12px;
+}
+
