@@ -3,6 +3,8 @@ window.onload = function() {
     var imgs = document.querySelectorAll(".img-container img"); 
     var imgsProfile = document.querySelectorAll(".collection-image img"); 
     var modalImg = document.getElementById("img01");
+    var span = document.getElementsByClassName("close")[0];
+    var menu = document.getElementById('menu'); 
 
     imgs.forEach(function(img) {
         img.onclick = function(){
@@ -18,14 +20,12 @@ window.onload = function() {
         }
     });
 
-    var span = document.getElementsByClassName("close")[0];
 
     span.onclick = function() { 
         modal.style.display = "none";
     }
 
     document.getElementById('menu-button').addEventListener('click', function() {
-        var menu = document.getElementById('menu');
         if (menu.classList.contains('menu-visible')) {
             menu.classList.remove('menu-visible');
         } else {
