@@ -269,6 +269,12 @@ main {
         object-fit: contain;
         width: 100%;
     }
+
+    p {
+        font-size: 1.2rem;
+        letter-spacing: 1.5;
+        font-weight:700;
+    }
 }
 
 .winner-title {
@@ -296,4 +302,12 @@ main {
     margin-top: -10rem;
     color: white;
     user-select: none;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
